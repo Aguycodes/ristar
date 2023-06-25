@@ -16,7 +16,17 @@ body {
 .logo {
     grid-column-start: 1;
     align-self: center;
-    margin-left: 20px;
+    margin-left: 40px;
+    margin-top: 10px;
+    color: white;
+}
+.logo img {
+    width: 200px;
+    cursor: pointer;
+    transition: transform .5s;
+}
+.logo img:hover{
+    transform: scale(1.1);
 }
 .headnav{
     grid-column-start: 2;
@@ -43,7 +53,7 @@ body {
     color: #888888;
 }
 #acc {
-    background-color: aqua;
+    background-color: rgb(116, 165, 255);
     padding: 10px;
     border-radius: 10px;
     color: black;
@@ -70,6 +80,21 @@ body {
 .welcomeText p{
     color: white;
     word-wrap: break-word;
+}
+.welcomeText a:link, .welcomeText a:visited{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    padding-right: 15px;
+    padding-left: 15px;
+    color: rgb(252, 161, 176);
+    transition: color .2s;
+}
+.welcomeText a:hover {
+    color: #ff0000;
+}
+.welcomeText a:first-of-type{
+    border-right: 2px solid white;
 }
 .welcomeImg {
     grid-column-start: 2;
