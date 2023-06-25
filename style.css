@@ -100,3 +100,13 @@ body {
     grid-column-start: 2;
     justify-self: center;
 }
+.welcomeImg img {
+    width: 170px;
+    background-color: rgb(116, 165, 255);
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 20px;
+}
+.one {
+    
+}
