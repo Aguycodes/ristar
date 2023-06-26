@@ -2,6 +2,9 @@ body {
     margin: 0;
     padding: 0;
 }
+body::-webkit-scrollbar{
+    display: none;
+}
 .landing {
     height: 100vh;
     display: grid;
@@ -126,6 +129,7 @@ body {
 .products h2{
     text-align: center;
     font-size: 50px;
+    overflow: hidden;
 }
 @keyframes fadeIn {
     from {opacity: 0.2;}
@@ -154,4 +158,20 @@ body {
     color: white;
     font-size: 25px;
     text-shadow: 1px 1px 1px black;
+}
+
+
+
+.footer {
+    height: 40vh;
+    background-color: rgb(1, 1, 51);
+    color: white;
+}
+#arrow {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    border-radius: .5em;
+    background-color: rgb(116, 165, 255);
+    padding: 0px;
 }
