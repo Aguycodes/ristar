@@ -69,9 +69,18 @@ body {
     grid-template-columns: 50% 50%;
     align-items: center;
 }
+@keyframes slideUp {
+    from {opacity: 0.2;}
+    to {opacity: 1; margin-top: 10px;}
+}
 .welcomeText {
     grid-column-start: 1;
     padding: 20px;
+    margin-top: 300px;
+    overflow: hidden;
+    animation-name: slideUp;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
 }
 .welcomeText p:first-child {
     color: white;
@@ -98,7 +107,11 @@ body {
 }
 .welcomeImg {
     grid-column-start: 2;
-    justify-self: center;
+    justify-self: flex-end;
+}
+@keyframes slideLeft {
+    from {opacity: 0.2;}
+    to {opacity: 1; margin-right: 220px;}
 }
 .welcomeImg img {
     width: 170px;
@@ -106,7 +119,17 @@ body {
     padding-left: 10px;
     padding-right: 10px;
     border-radius: 20px;
+    animation-name: slideLeft;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
 }
-.one {
-    
+.services {
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.services .coln{
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
 }
