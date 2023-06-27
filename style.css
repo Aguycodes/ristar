@@ -66,7 +66,7 @@ body::-webkit-scrollbar{
     transition: color .2s;
 }
 .headnav a:hover {
-    color: #888888;
+    color: #aaaaaa;
 }
 #acc {
     background-color: rgb(116, 165, 255);
@@ -142,28 +142,50 @@ body::-webkit-scrollbar{
     animation-duration: 3s;
     animation-fill-mode: forwards;
 }
+.products{
+    background-color: rgba(0, 238, 255, .1);
+}
 .products h2{
     text-align: center;
     font-size: 50px;
-    overflow: hidden;
-}
-@keyframes fadeIn {
-    from {opacity: 0.2;}
-    to {opacity: 1;}
+    font-family: "Courgette", cursive;
+    color: rgb(0, 238, 255);
+    text-shadow: 2px 2px black;
+    margin-top: 0px;
+    padding-top: 30px;
+
 }
 .services {
     display:flex;
     justify-content: center;
     flex-wrap: wrap;
 }
-.services .coln p{
+.services .coln {
     width: 300px;
     height: 400px;
-    box-shadow: 10px 10px 10px 5px #bafdff;
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    background-color: rgb(0, 106, 148);
     border-radius: 2em;
-    animation-name: fadeIn;
-    animation-duration: 2s;
-    animation-fill-mode: forwards;
+    color: white;
+    display: grid;
+    grid-template-rows: 20% 80%;
+}
+.services .coln .top {
+    grid-row-start: 1;
+    margin: 0px;
+    padding-top: 10px;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    text-align: center;
+    background-color: rgb(170, 249, 255);
+    width: 100%;
+    height: 100%;
+}
+.services .coln p {
+    grid-row-start: 2;
 }
 .gain {
     background: linear-gradient(300deg, rgb(0, 238, 255), rgb(0, 106, 148));
@@ -187,9 +209,17 @@ body::-webkit-scrollbar{
     background-color: rgb(1, 1, 51);
     color: white;
 }
+@keyframes arrowAnim {
+    0% {margin-bottom: 20px;}
+    50% {margin-bottom: 50px;}
+    100% {margin-bottom: 20px;}
+}
 #arrow {
     position: fixed;
     bottom: 0;
     right: 0;
     margin: 20px;
+}
+#arrow:hover {
+    animation: arrowAnim 1.5s forwards;
 }

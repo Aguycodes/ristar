@@ -29,6 +29,10 @@ body{
 .signUp span:first-of-type img{
     vertical-align: middle;
 }
+.signUp span:first-of-type a{
+    text-decoration: none;
+    color: white;
+}
 .signUp form{
     padding-bottom: 30px;
     align-self: flex-end;
