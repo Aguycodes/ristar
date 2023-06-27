@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Orbitron&family=Pacifico&family=Roboto+Mono:wght@500&display=swap');
+
+
 body {
     margin: 0;
     padding: 0;
@@ -5,31 +8,39 @@ body {
 body::-webkit-scrollbar{
     display: none;
 }
+@keyframes aesthetic {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+}
 .landing {
     height: 100vh;
     display: grid;
     grid-template-rows: 10% 90%;
-    background-color: rgb(1, 1, 51);
+    background:linear-gradient(300deg, rgb(0, 238, 255), rgb(1, 1, 51));
+    background-size: 180% 180%;
+    animation: aesthetic 25s ease infinite;
 }
 .header {
     grid-row-start: 1;
     display: grid;
-    grid-template-columns: 30% 70%;
+    grid-template-columns: 40% 60%;
 }
 .logo {
     grid-column-start: 1;
-    align-self: center;
+    display: flex;
+    align-items: center;
     margin-left: 40px;
     margin-top: 10px;
     color: white;
 }
-.logo img {
-    width: 200px;
-    cursor: pointer;
-    transition: transform .5s;
+.logo img{
+    align-self: center;
 }
-.logo img:hover{
-    transform: scale(1.1);
+.logo span {
+    font-size: 40px;
+    font-family: "Pacifico", cursive;
+    cursor: pointer;
 }
 .headnav{
     grid-column-start: 2;
@@ -50,6 +61,8 @@ body::-webkit-scrollbar{
     color: #ffffff;
     text-decoration: none;
     font-size: 17px;
+    font-family: "Roboto Mono", monospace;
+    font-weight: bold;
     transition: color .2s;
 }
 .headnav a:hover {
@@ -60,6 +73,7 @@ body::-webkit-scrollbar{
     padding: 10px;
     border-radius: 10px;
     color: black;
+    font-family: "Orbitron", sans-serif;
     font-weight: bold;
     transition: color .2s, background-color .2s;
 }
@@ -88,15 +102,18 @@ body::-webkit-scrollbar{
 .welcomeText p:first-child {
     color: white;
     font-size: 50px;
+    font-family: "Courgette", cursive;
 }
 .welcomeText p{
     color: white;
     word-wrap: break-word;
+    font-family: "Roboto Mono", monospace;
 }
 .welcomeText a:link, .welcomeText a:visited{
     text-decoration: none;
     font-size: 20px;
     font-weight: bold;
+    font-family: "Orbitron", sans-serif;
     padding-right: 15px;
     padding-left: 15px;
     color: rgb(252, 161, 176);
@@ -113,17 +130,16 @@ body::-webkit-scrollbar{
     justify-self: flex-end;
 }
 @keyframes slideLeft {
-    from {opacity: 0.2;}
-    to {opacity: 1; margin-right: 220px;}
+    from {opacity: 0;}
+    to {opacity: 1; margin-right: 150px;}
 }
 .welcomeImg img {
-    width: 170px;
-    background-color: rgb(116, 165, 255);
+    width: 400px;
     padding-left: 10px;
     padding-right: 10px;
     border-radius: 20px;
     animation-name: slideLeft;
-    animation-duration: 2s;
+    animation-duration: 3s;
     animation-fill-mode: forwards;
 }
 .products h2{
@@ -151,13 +167,17 @@ body::-webkit-scrollbar{
 }
 .gain {
     background: linear-gradient(300deg, rgb(0, 238, 255), rgb(0, 106, 148));
-    height: 30vh;
+    height: 50vh;
     padding-top: 30px;
 }
 .gain li {
     color: white;
-    font-size: 25px;
+    font-size: 30px;
     text-shadow: 1px 1px 1px black;
+}
+.gain a {
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
@@ -173,5 +193,5 @@ body::-webkit-scrollbar{
     right: 0;
     border-radius: .5em;
     background-color: rgb(116, 165, 255);
-    padding: 0px;
+    margin: 20px;
 }
