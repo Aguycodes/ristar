@@ -1,36 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Orbitron&family=Pacifico&family=Roboto+Mono:wght@500&display=swap');
+
+
 body{
     margin: 2px;
     padding: 0;
+    display: grid;
+    justify-content: center;
     background-color: #000b48;
 }
 .logIn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-.logIn form{
+    display: grid;
+    grid-template-rows: 20% 70% 10%;
     border: 4px solid white;
     border-radius: 2em;
-    padding-bottom: 30px;
     width: 80vh;
+    height: 90vh;
+    margin-top: 30px;
 }
-.logIn form h3{
+.logIn span:first-of-type{
+    grid-row-start: 1;
     color: white;
     text-align: center;
-    font-size: 30px;
+    align-self: center;
+    overflow: hidden;
+    font-size: 50px;
+    font-family: "Pacifico", cursive;
+}
+.logIn span:first-of-type img{
+    vertical-align: middle;
+}
+.logIn form{
+    grid-row-start: 2;
+    padding-bottom: 30px;
+    align-self: flex-end;
 }
 .logIn form label{
     color: white;
     margin: 10px;
     font-size: 14pt;
+    font-family: "Orbitron", sans-serif;
+    font-weight: bold;
 }
 .logIn form input{
+    font-family: "Orbitron", sans-serif;
     width: 80%;
     margin: 20px;
     padding: 10px;
     border-radius: .7em;
-    transition: ease-in-out .3s;
+    transition: background-color .3s;
 }
 .logIn form input:hover{
     background-color: rgb(165, 255, 255);
@@ -43,8 +60,6 @@ body{
     size: 4;
 }
 .logIn form button{
-    display: inline-block;
-    text-align: center;
     margin-top: 5px;
     margin-left: 5px;
     width: 30%;
@@ -52,8 +67,19 @@ body{
     border-radius: .6em;
     background-color: red;
     color: white;
+    font-family: "Roboto Mono", monospace;
     font-size: 15px;
     font-weight: bold;
     padding: 10px;
-    transition: .5s;  
+    transition: ease .5s; 
+}
+.logIn span:last-of-type {
+    align-self: end;
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    font-family: "Roboto Mono", monospace;
+}
+.logIn span:last-of-type a {
+    color: rgb(216, 2, 2);
 }
