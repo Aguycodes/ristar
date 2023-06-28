@@ -186,24 +186,62 @@ body::-webkit-scrollbar{
 }
 .services .coln p {
     grid-row-start: 2;
+    padding: 5px;
+    font-size: 20px;
+    font-family: "Roboto Mono", monospace;
+    align-self: center;
+    text-align: center;
 }
 .gain {
     background: linear-gradient(300deg, rgb(0, 238, 255), rgb(0, 106, 148));
-    height: 50vh;
-    padding-top: 30px;
+    height: auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.gain h3 {
+    text-align: center;
+    color: white;
+    font-size: 45px;
+    font-weight: bold;
+    font-family: "Courgette", cursive;
+    text-shadow: 2px 2px black;
+    margin: 0;
 }
 .gain li {
+    margin-bottom: 5px;
     color: white;
-    font-size: 30px;
-    text-shadow: 1px 1px 1px black;
+    font-size: 25px;
+    font-family: "Roboto Mono", monospace;
 }
 .gain a {
-    margin-left: auto;
-    margin-right: auto;
+    color: rgb(252, 161, 176);
+    text-decoration: none;
+    text-shadow: 1px 1px black;
+    font-size: 45px;
+    font-family: "Courgette", cursive;
+    transition: color .5s;
 }
-
-
-
+.gain a:hover {
+    color: #ff0000;
+}
+.wtb {
+    text-align: center;
+}
+.wtb h2 {
+    font-size: 50px;
+    font-weight: bold;
+    font-family: "Courgette", cursive;
+    text-shadow: 2px 2px 2px rgb(0, 238, 255);
+}
+.wtb img {
+    height: 150px;
+}
+.wtb p {
+    font-size: 20px;
+    font-family: "Roboto Mono", cursive;
+}
 .footer {
     height: 40vh;
     background-color: rgb(1, 1, 51);
@@ -220,6 +258,6 @@ body::-webkit-scrollbar{
     right: 0;
     margin: 20px;
 }
-#arrow:hover {
+#arrow:hover, #arrow:active {
     animation: arrowAnim 1.5s forwards;
 }
