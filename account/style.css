@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Orbitron&family=Pacifico&family=Roboto+Mono:wght@500&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+@keyframes aesthetic {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+}
+.content {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 20% 70%;
+    background:linear-gradient(300deg, rgb(0, 238, 255), rgb(1, 1, 51));
+    background-size: 180% 180%;
+    animation: aesthetic 25s ease infinite;
+}
+.header {
+    grid-row-start: 1;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+.header span:first-of-type {
+    color: white;
+    margin: 10px;
+    font-size: 45px;
+    font-weight: bold;
+    font-family: "Courgette", cursive;
+}
+.header span:nth-of-type(2) {
+    color: white;
+    margin-left: 5px;
+    font-size: 40px;
+    font-family: "Orbitron", sans-serif;
+}
+.header img {
+    justify-self: flex-end;
+    background-color: white;
+    border-radius: 50%;
+    height: 60px;
+    transition: background-color 1s;
+}
+.header img:hover {
+    background-color: #b6ffb6;
+}
+.header a:link, .header a:visited {
+    color: white;
+    margin: 10px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "Orbitron", sans-serif;
+}
+
+.contact {
+    display: grid;
+    grid-template-columns: 2;
+    background-color: rgba(0, 238, 255, .2);
+    margin: 0;
+}
+.contact .colOne {
+    grid-column-start: 1;
+    padding: 10px;
+}
+.contact h2 {
+    font-size: 40px;
+    font-family: "Courgette", cursive;
+}
+.contact img {
+    height: 50px;
+    vertical-align: middle;
+    margin-top: 5px;
+}
+.contact .colOne p{
+    font-size: 20px;
+    font-family: "Roboto Mono", monospace;
+}
+.contact .colOne a {
+    color: black;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: bold;
+    font-family: "Orbitron", sans-serif;
+}
+.contact .colTwo {
+    grid-column-start: 2;
+    justify-self: center;
+    padding: 10px;
+}
+.contact .colTwo label {
+    font-size: 17px;
+    font-weight: bold;
+    font-family: "Orbitron", sans-serif;
+}
+.contact .colTwo input {
+    border-radius: .5em;
+    padding: 5px;
+    font-family: monospace;
+}
+.contact .colTwo textarea {
+    margin-top: 5px;
+    border-radius: .5em;
+    resize: none;
+    width: 100%;
+    height: 150px;
+    border: 2px solid black;
+}
+.contact .colTwo button {
+    padding: 10px;
+    width: 100px;
+    font-size: 17px;
+    font-weight: bold;
+    font-family: monospace;
+    color: white;
+    background-color: #ff0000;
+    border-radius: .5em;
+}
+.footer{
+    margin-top: 50px;
+    grid-column-start: span 2;
+    text-align: center;
+}
+.footer h4{
+    font-family: "Orbitron", sans-serif;
+}
+.footer a {
+    margin: 10px;
+    text-decoration: none;
+    color: blue;
+}

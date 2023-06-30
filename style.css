@@ -75,7 +75,7 @@ body::-webkit-scrollbar{
     color: black;
     font-family: "Orbitron", sans-serif;
     font-weight: bold;
-    transition: color .2s, background-color .2s;
+    transition: color .5s, background-color .5s;
 }
 #acc:hover, #acc:active{
     color: white;
@@ -242,7 +242,7 @@ body::-webkit-scrollbar{
 .contact {
     display: grid;
     grid-template-columns: 2;
-    background-color: rgba(0, 238, 255, .1);
+    background-color: rgba(0, 238, 255, .2);
     margin: 0;
 }
 .contact .colOne {

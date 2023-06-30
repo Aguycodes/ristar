@@ -4,26 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <div class="header">
-        <span id="greet">Good Morning </span><span id="user">John Doe</span>
-        <a href="#">Fund Wallet</a><a href="#">Withdraw</a>
-    </div>
-    <div class="main">
-        <span>Transaction history</span>
+    <div class="content">
+        <div class="header">
+            <span id="greet">Good Morning</span><span id="user">John Doe</span><a href="#"><img src="../images/profile.png"></a><br>
+            <span><a href="#">Fund Wallet</a><a href="#">Withdraw</a><a href="#">Transaction history</a></span>
+        </div>
         <div class="product">
-            <span><img src="../images/phone.png"><br>Airtime</span>
-            <span><img src="../images/mobile.png"><br>Airtime</span>
-            <span><img src="../images/tv.png"><br>Airtime</span>
-            <span><img src="../images/electrician.png"><br>Airtime</span>
-            <span><img src="../images/waec.png"><br>Airtime</span>
-            <span><img src="../images/sms.png"><br>Airtime</span>
-            <span><img src="../images/phone.png"><br>Airtime</span>
-            <span><img src="../images/mobile.png"><br>Airtime</span>
+            <span><img src="../images/phone.png"><br><a href="#">Airtime</a></span>
+            <span><img src="../images/mobile.png"><br><a href="#">Data</a></span>
+            <span><img src="../images/tv.png"><br><a href="#">Cable Subscription</a></span>
+            <span><img src="../images/electrician.png"><br><a href="#">Electricity Bills</a></span>
+            <span><img src="../images/waec.png"><br><a href="#">Result Checker</a></span>
+            <span><img src="../images/sms.png"><br><a href="#">Bulk Sms</a></span>
+            <span><img src="../images/phone.png"><br><a href="#">Recharge Cards</a></span>
+            <span><img src="../images/mobile.png"><br><a href="#">Data Cards</a></span>
         </div>
     </div>
-    
+    <div class="contact" id="contact">
+        <div class="colOne">
+            <h2>Contact</h2>
+            <p>Reach us on:</p>
+            <a href="https://wa.me/message/XKEMDC3TZZTHG1" target="_blank"><img src="../images/whatsapp.png">Whatsapp</a><br>
+            <a href="mailto:risingstarvtu.services@gmail.com" target="_blank"><img src="../images/email.png">Email</a>
+        </div>
+        <div class="colTwo">
+            <form>
+                <h2>Need help?</h2>
+                <label>Name</label>
+                <input type="text" id="name" placeholder="John Doe" required size="25">
+                <label>email</label>
+                <input type="email" id="email" placeholder="John@doe.co" required size="25"><br>
+                <textarea id="help" placeholder="need help?"></textarea>
+                <button>Send</button>
+            </form>
+        </div>
+        <div class="footer">
+            <h4>Rising Star Services</h4>
+            <div class="links">
+                <a href="#">policy</a>
+                <a href="signUp/index.html">register</a>
+                <a href="#">pricing</a>
+                <a href="#">faq</a>
+                <a href="#">about</a>
+                <a href="https://wa.me/message/XKEMDC3TZZTHG1">Need a website?</a>
+            </div>
+            <p>&copy;2023 ristar</p>
+        </div>
+    </div>
 </body>
 </html>
