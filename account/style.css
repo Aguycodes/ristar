@@ -23,8 +23,11 @@ body::-webkit-scrollbar{
 .header {
     grid-row-start: 1;
     padding: 10px;
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-rows: 70% 30%;
+}
+.first {
+    grid-row-start: 1;
 }
 .header span:first-of-type {
     color: white;
@@ -40,23 +43,49 @@ body::-webkit-scrollbar{
     font-family: "Orbitron", sans-serif;
 }
 .header img {
-    justify-self: flex-end;
+    float: right;
     background-color: white;
     border-radius: 50%;
     height: 60px;
-    transition: background-color 1s;
+    transition: background-color .5s;
 }
 .header img:hover {
-    background-color: #b6ffb6;
+    background-color: rgb(1, 1, 51, .3);
 }
-.header a:link, .header a:visited {
-    color: white;
+.second {
+    grid-row-start: 2;
+}
+.header .second a:link, .header .second a:visited {
+    color: black;
+    background-color: rgb(116, 165, 255);
+    padding: 5px;
+    border-radius: .3em;
     margin: 10px;
     text-decoration: none;
     font-size: 20px;
-    font-weight: bold;
     font-family: "Orbitron", sans-serif;
+    transition: color .5s, background-color .5s;
 }
+.header .second a:hover, .header .second a:active {
+    color: white;
+    background-color: #ff0000;
+}
+#history {
+    padding: o;
+    border-bottom: 2px solid white;
+    border-radius: 0;
+    float: right;
+    margin: 0;
+    background-color: transparent;
+    color: white;
+    font-family: "Roboto Mono", monospace;
+    font-weight: bold;
+    transition: color .5s;
+}
+#history:hover {
+    color: #ff9494;
+}
+
 
 .contact {
     display: grid;
