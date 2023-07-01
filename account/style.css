@@ -15,7 +15,7 @@ body::-webkit-scrollbar{
 .content {
     height: 100vh;
     display: grid;
-    grid-template-rows: 20% 70%;
+    grid-template-rows: 30% 60% 10%;
     background:linear-gradient(300deg, rgb(0, 238, 255), rgb(1, 1, 51));
     background-size: 180% 180%;
     animation: aesthetic 25s ease infinite;
@@ -28,11 +28,12 @@ body::-webkit-scrollbar{
 }
 .first {
     grid-row-start: 1;
+    align-self: center;
 }
 .header span:first-of-type {
     color: white;
     margin: 10px;
-    font-size: 45px;
+    font-size: 60px;
     font-weight: bold;
     font-family: "Courgette", cursive;
 }
@@ -54,6 +55,7 @@ body::-webkit-scrollbar{
 }
 .second {
     grid-row-start: 2;
+    align-self: flex-start;
 }
 .header .second a:link, .header .second a:visited {
     color: black;
@@ -85,7 +87,40 @@ body::-webkit-scrollbar{
 #history:hover {
     color: #ff9494;
 }
-
+.product {
+    grid-row-start: 2;
+    align-self: center;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    border-top: 2px solid white;
+}
+.product span {
+    text-align: center;
+    padding: 20px;
+    width: 150px;
+    height: 150px;
+    border-radius: 2em;
+    border: 2px solid white;
+    margin: 20px;
+    transition: transform .5s, background .5s;
+}
+.product span:hover {
+    transform: scale(1.05);
+    background: linear-gradient(to bottom, rgb(0, 238, 255), #010133);
+}
+.product span img {
+    height: 80px;
+}
+.product span a:link, .product span a:visited {
+    color: white;
+    text-decoration: none;
+    text-shadow: 1px 1px black;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: "Roboto Mono", monospace;
+}
 
 .contact {
     display: grid;
