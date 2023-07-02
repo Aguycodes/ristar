@@ -72,6 +72,14 @@ body::-webkit-scrollbar{
     color: white;
     background-color: #ff0000;
 }
+#amount{
+    padding: 5px;
+    color: white;
+    background-color: #ff0000;
+    border-radius: .5em;
+    font-size: 20px;
+    font-family: "Roboto Mono", monospace;
+}
 #history {
     padding: o;
     border-bottom: 2px solid white;
