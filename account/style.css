@@ -112,11 +112,11 @@ body::-webkit-scrollbar{
     border-radius: 2em;
     border: 2px solid white;
     margin: 20px;
-    transition: transform .5s, background .5s;
+    transition: transform .5s, background-color .5s;
 }
 .product span:hover {
     transform: scale(1.05);
-    background: linear-gradient(to bottom, rgb(0, 238, 255), #010133);
+    background-color: rgb(0, 238, 255);
 }
 .product span img {
     height: 80px;
@@ -133,7 +133,7 @@ body::-webkit-scrollbar{
 .contact {
     display: grid;
     grid-template-columns: 2;
-    background-color: rgba(0, 238, 255, .2);
+    background-color: rgba(0, 238, 255, .3);
     margin: 0;
 }
 .contact .colOne {

@@ -21,67 +21,8 @@ body::-webkit-scrollbar{
     background-size: 180% 180%;
     animation: aesthetic 25s ease infinite;
 }
-.header {
-    grid-row-start: 1;
-    display: grid;
-    grid-template-columns: 40% 60%;
-}
-.logo {
-    grid-column-start: 1;
-    display: flex;
-    align-items: center;
-    margin-left: 40px;
-    margin-top: 10px;
-    color: white;
-}
-.logo img{
-    align-self: center;
-}
-.logo span {
-    font-size: 40px;
-    font-family: "Pacifico", cursive;
-    cursor: pointer;
-}
-.headnav{
-    grid-column-start: 2;
-    justify-self: flex-end;
-    align-self: center;
-    margin-right: 20px;
-}
-.headnav ul {
-    list-style-type: none;
-    display: inline;
-}
-.headnav li {
-    display: inline;
-    margin-left: 20px;
-    margin-right: 20px;
-}
-.headnav a:link, .headnav a:visited {
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 17px;
-    font-family: "Roboto Mono", monospace;
-    font-weight: bold;
-    transition: color .2s;
-}
-.headnav a:hover {
-    color: #aaaaaa;
-}
-#acc {
-    background-color: rgb(116, 165, 255);
-    padding: 10px;
-    border-radius: 10px;
-    color: black;
-    font-family: "Orbitron", sans-serif;
-    font-weight: bold;
-    transition: color .5s, background-color .5s;
-}
-#acc:hover, #acc:active{
-    color: white;
-    background-color: #ff0000;
-}
 .welcome {
+    margin-top: 200px;
     display: grid;
     grid-template-columns: 50% 50%;
     align-items: center;
@@ -101,7 +42,7 @@ body::-webkit-scrollbar{
 }
 .welcomeText p:first-child {
     color: white;
-    font-size: 50px;
+    font-size: 3rem;
     font-family: "Courgette", cursive;
 }
 .welcomeText p{
@@ -111,7 +52,7 @@ body::-webkit-scrollbar{
 }
 .welcomeText a:link, .welcomeText a:visited{
     text-decoration: none;
-    font-size: 20px;
+    font-size: 1.2rem;
     font-weight: bold;
     font-family: "Orbitron", sans-serif;
     padding-right: 15px;
@@ -328,4 +269,18 @@ body::-webkit-scrollbar{
 }
 #arrow:hover, #arrow:active {
     animation: arrowAnim 1.5s forwards;
+}
+@media only screen and (max-width: 1000px){
+    .header{
+        display: block;
+    }
+    .welcome{
+        margin-top: 400px;
+    }
+    .welcomeText{
+        grid-column-start: span 2;
+    }
+    .welcomeImg{
+        display: none;
+    }
 }
