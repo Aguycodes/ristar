@@ -7,6 +7,7 @@ body{
     background-color: #000b48;
     display: flex;
     justify-content: center;
+    overflow: hidden;
 }
 .signUp{
     display: grid;
