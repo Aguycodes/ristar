@@ -17,6 +17,8 @@ input2.addEventListener('input', checkFormCompletion);
 function checkFormCompletion() {
   if (input1.value !== '' && input2.value !== '') {
     submitbtn.classList.remove('disabled');
+  } else {
+    submitbtn.classList.add('disabled');
   }
 }
 
