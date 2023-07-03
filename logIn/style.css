@@ -5,7 +5,8 @@ body{
     background: linear-gradient(300deg, rgb(1, 1, 51), rgb(0, 238, 255));
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100vh;
+    height: 110vh;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
