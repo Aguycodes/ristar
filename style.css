@@ -11,6 +11,7 @@ body::-webkit-scrollbar{
 .head{
     position: fixed;
     width: 100%;
+    z-index: 99;
 }
 .head span:first-of-type {
     font-size: 2em;
@@ -289,6 +290,9 @@ body::-webkit-scrollbar{
     animation: arrowAnim 1.5s forwards;
 }
 @media only screen and (max-width: 1000px){
+    .head span:last-of-type img{
+        width: 60px;
+    }
     .welcome{
         margin-top: 25em;
     }
