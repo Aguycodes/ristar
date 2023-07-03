@@ -8,13 +8,29 @@ body {
 body::-webkit-scrollbar{
     display: none;
 }
+.head{
+    position: fixed;
+    width: 100%;
+}
+.head span:first-of-type {
+    font-size: 2em;
+    font-family: "Pacifico", cursive;
+    text-shadow: 1px 1px 1px rgb(1, 1, 51);
+    color: white;
+}
+.head span:last-of-type img{
+    width: 80px;
+    float: right;
+    transition: background-color .5s;
+    border-radius: 50%;
+}
+.head span:last-of-type img:hover{
+    background-color: rgb(170, 249, 255);
+}
 @keyframes aesthetic {
     0% {background-position: 0% 50%;}
     50% {background-position: 100% 50%;}
     100% {background-position: 0% 50%;}
-}
-.navbar{
-    background-color: rgb(0, 238, 255, .5);
 }
 .landing {
     height: 100vh;
@@ -61,7 +77,7 @@ body::-webkit-scrollbar{
     padding-right: 15px;
     padding-left: 15px;
     color: rgb(252, 161, 176);
-    transition: color .2s;
+    transition: color .5s;
 }
 .welcomeText a:hover {
     color: #ff0000;
@@ -75,7 +91,7 @@ body::-webkit-scrollbar{
 }
 @keyframes slideLeft {
     from {opacity: 0;}
-    to {opacity: 1; margin-right: 150px;}
+    to {opacity: 1; margin-right: 5em;}
 }
 .welcomeImg img {
     width: 400px;
@@ -98,7 +114,7 @@ body::-webkit-scrollbar{
 }
 .services {
     display:flex;
-    justify-content: center;
+    justify-content: space-around;
     flex-wrap: wrap;
 }
 .services .coln {
@@ -142,7 +158,6 @@ body::-webkit-scrollbar{
     align-items: center;
 }
 .gain h3 {
-    text-align: center;
     color: white;
     font-size: 45px;
     font-weight: bold;
@@ -274,16 +289,62 @@ body::-webkit-scrollbar{
     animation: arrowAnim 1.5s forwards;
 }
 @media only screen and (max-width: 1000px){
-    .header{
-        display: block;
-    }
     .welcome{
-        margin-top: 400px;
+        margin-top: 25em;
     }
     .welcomeText{
         grid-column-start: span 2;
     }
+    .welcomeText p:first-child{
+        font-size: 2.2rem;
+    }
     .welcomeImg{
         display: none;
     }
+    .products h2{
+        font-size: 30px;
+    }
+    .services .coln {
+        height: 200px;
+        width: 150px;
+        border-radius: 1em;
+    }
+    .services .coln .top {
+        padding: 0;
+    }
+    .services .coln img {
+        height: 40px;
+    }
+    .services .coln p {
+        font-size: .9rem;
+    }
+    .gain {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .gain h3{
+        font-size: 2rem;
+    }
+    .gain li {
+        font-size: 1rem;
+    }
+    .gain a {
+        font-size: 2rem;
+    }
+    .wtb h2 {
+        font-size: 2.5rem;
+    }
+    .wtb img {
+        height: 90px;
+    }
+    .wtb p{
+        font-size: 1rem;
+    }
+    .contact {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
 }
