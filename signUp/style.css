@@ -14,3 +14,40 @@ body{
 .signUp form{
     width: 300px;
 }
+#logo{
+    margin: 20px;
+}
+#logo a{
+    font-size: 2em;
+    font-family: "Pacifico", cursive;
+    text-shadow: 1px 1px 1px rgb(1, 1, 51);
+    color: white;
+    text-decoration: none;
+}
+.signUp input[type="checkbox"]{
+    padding: 10px;
+    margin-top: 15px;
+    margin-right: 5px;
+}
+#show {
+    color: white;
+    font-size: 17px;
+    font-family: "Orbitron", sans-serif;
+}
+#link {
+    font-size: 17px;
+    font-weight: bold;
+    background-color: rgb(1, 1, 51);
+    border-radius: .5rem;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+#link:hover {
+    background-color: rgb(0, 238, 255);
+}
+.signUp .logIn{
+    margin-top: 5rem;
+    color: white;
+    font-family: "Roboto Mono", monospace;
+}

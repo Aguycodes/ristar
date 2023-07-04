@@ -25,12 +25,12 @@
                 <input type="password" class="form-control" id="floatingPassword" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" placeholder="password" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required><p style="color: white; margin: 1px; font-size: .7rem;">Must contain at least one number and one uppercase and lowercase letter and at least 8 or more characters</p>
                 <label for="floatingPassword">Password</label>
             </div>
-            <input type="checkbox" id="show" onclick="showPass()"><label>show password</label><br><br><br>
-            <span id="terms"><input type="checkbox" id="check"><label>I have read and accepted the terms and conditions. <a href="#">Terms and conditions</a></label><br></span>
-            <button id="button">Create account</button>
+            <input type="checkbox" id="show" onclick="showPass()"><label style="color: white;">show password</label><br><br><br>
+            <span id="terms"><input type="checkbox" id="check"><label style="color: white;">I have read and accepted the terms and conditions. <a href="#">Terms and conditions</a></label><br></span>
+            <a href="../account/index.html" class="btn disabled" id="link">Create Account</a>
         </form>
         <br><br><br>
-        <span>already have an account? <a href="../logIn/index.html">Login.</a></span>
+        <span class="logIn">already have an account? <a href="../logIn/index.html">Login.</a></span>
     </div>
     <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js
