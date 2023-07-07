@@ -21,7 +21,7 @@ input3.addEventListener('input', checkFormCompletion);
 input4.addEventListener('change', checkFormCompletion);
 
 function checkFormCompletion() {
-  if (input1.value !== '' && input2.value !== '' && input3.value !== '' && input4 === 'checked') {
+  if (input1.value !== '' && input2.value !== '' && input3.value !== '' && input4.checked) {
     submitbtn.classList.remove('disabled');
   } else {
     submitbtn.classList.add('disabled');
