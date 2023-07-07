@@ -97,7 +97,7 @@ body::-webkit-scrollbar{
 }
 .product {
     grid-row-start: 2;
-    align-self: center;
+    align-items: center;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
@@ -205,4 +205,48 @@ body::-webkit-scrollbar{
     margin: 10px;
     text-decoration: none;
     color: blue;
+}
+
+@media only screen and (max-width: 768px){
+    .content{
+        grid-template-rows: 20% 70% 10%;
+    }
+    .header span:first-of-type{
+        font-size: 28px;
+    }
+    .header span:nth-of-type(2){
+        font-size: 18px;
+    }
+    .header img{
+        height: 30px;
+    }
+    .header .second a:link{
+        font-size: 10px;
+        margin: 5px;
+    }
+    #amount{
+        font-size: 10px;
+        border-radius: .1em;
+    }
+    #history{
+        font-size: 10px;
+    }
+    .product span{
+        height: 60px;
+        width: 60px;
+        border-radius: 1em;
+        margin: 10px;
+    }
+    .product span img{
+        height: 40px;
+    }
+    .product span a:link{
+        font-size: 0.7em;
+    }
+    .contact {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }
