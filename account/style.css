@@ -221,11 +221,11 @@ body::-webkit-scrollbar{
         height: 30px;
     }
     .header .second a:link{
-        font-size: 10px;
+        font-size: 1em;
         margin: 5px;
     }
     #amount{
-        font-size: 10px;
+        font-size: 1em;
         border-radius: .1em;
     }
     #history{
