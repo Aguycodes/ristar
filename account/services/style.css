@@ -1,0 +1,28 @@
+
+body{
+    background: linear-gradient(300deg, rgb(1, 1, 51), rgb(0, 238, 255));
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main {
+    background-color: white;
+    padding: 2em;
+    border-radius: 2em;
+}
+.main #top {
+    font-size: 2em;
+}
+.main .network span{
+    margin: 5px;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
