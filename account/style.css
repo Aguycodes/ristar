@@ -107,8 +107,8 @@ body::-webkit-scrollbar{
 .product span {
     text-align: center;
     padding: 20px;
-    width: 150px;
-    height: 150px;
+    width: 130px;
+    height: 130px;
     border-radius: 2em;
     border: 2px solid white;
     margin: 20px;

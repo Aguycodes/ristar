@@ -15,35 +15,28 @@
         <br>
         <form method="get">
             <div class="network">
-                <select class="form-select mb-3" required id="netw">
-                    <option value="">Choose your Network</option>
-                    <option value="mtn">MTN</option>
-                    <option value="glo">GLO</option>
-                    <option value="airtel">AIRTEL</option>
-                    <option value="9mobile">9MOBILE</option>
-                </select>
+               <span>MTN <input type="radio" name="airtime" id="mtn"></span>
+                <span>GLO <input type="radio" name="airtime" id="glo"></span>
+                <span>AIRTEL <input type="radio" name="airtime" id="airtel"></span>
+                <span>9MOBILE <input type="radio" name="airtime" id="ninem"></span>
             </div>
-            <div class="amount">
-                <label for="amt">Amount</label><br>
-                <input type="number" name="amount" id="amt" placeholder="min of 100">
-            </div>
-            <br>
+            <select class="form-select mb-3" required>
+                <option value="">Choose your option</option>
+            </select>
             <div class="num">
                 <label for="phoneNo">Phone Number</label><br>
-                <input type="number" name="phone" id="phoneNo" required oninput="checkInput()">
+                <input type="number" name="phone" id="phoneNo" required>
             </div>
             <br>
             <div class="purPin">
                 <label for="pin">Enter Pin</label><br>
-                <input type="number" name="purchasePin" id="pin" required oninput="checkInput()">
+                <input type="number" name="purchasePin" id="pin" required>
             </div>
             <br>
-            <button disabled id="submitBtn" onclick="submit()">PROCEED</button>
+            <button type="submit" disabled>PROCEED</button>
         </form>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js
     "></script>
-    <script src="script.js"></script>
-    <script src="airtime.js"></script>
 </body>
 </html>
